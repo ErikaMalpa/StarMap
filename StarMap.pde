@@ -40,13 +40,11 @@ row.setString("Descriprion");
 
 //to go to print star
 printStars();
-}
+{
 
 //To print stars
 void printStars()
 {
-  
-  
   String s = PrintStars("File.csv");
   println(s);
 }
