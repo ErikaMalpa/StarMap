@@ -59,6 +59,15 @@ int row = 0;
 
 void draw()
 {
+  //to plot the stars
+  //yellow cross
+  fill(0);
+  stroke(0,50,0);
+  //red circle
+  stroke(255,0,0);
+  fill(0);
+  fill(5,5,5);
+  
   //Drawing the purple grid lines
   while (y < height - 50) //-50 for the pixels
   {
@@ -113,4 +122,5 @@ void draw()
        row++;
     }
   }
+  
 }
