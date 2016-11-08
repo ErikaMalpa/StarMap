@@ -17,6 +17,17 @@ void loadData()
 //TableRow
 Table StTable = loadTable("File.csv");
 
+Star.clear();
+
+for (TableRow r : t.rows())
+{
+  Star s = new Star(
+  r.getFloat("Column")
+  , r.getString("Name")
+  , r.getString("Description")
+  );
+
+/*
 StTable.addColumn("Column",loadTable.FLOAT);
 StTable.addColumn("Name",loadTable.STRING);
 StTable.addColumn("Description",loadTable.STRING);
@@ -25,14 +36,17 @@ TableRow row = table.addRow();
 row.setFloat("Column", 2);
 row.setString("Name", "Hab?");
 row.setString("Descriprion");
+*/
 
+//to go to print star
+printStars();
 }
-
-String data = ("file.csv");
 
 //To print stars
 void printStars()
 {
+  
+  
   String s = PrintStars("File.csv");
   println(s);
 }
@@ -98,5 +112,5 @@ void draw()
       }
        row++;
     }
-  } 
+  }
 }
